@@ -1,4 +1,4 @@
-package com.androiddevs.mvvmnewsapp.ui
+package dev.strangenoob.mvvmnewsapp.model
 
 data class Source(
     val id: Any,

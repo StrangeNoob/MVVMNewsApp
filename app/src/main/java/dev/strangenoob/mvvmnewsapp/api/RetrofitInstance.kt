@@ -1,6 +1,6 @@
-package com.androiddevs.mvvmnewsapp.api
+package dev.strangenoob.mvvmnewsapp.api
 
-import com.androiddevs.mvvmnewsapp.utils.Constants.Companion.BASE_URL
+import dev.strangenoob.mvvmnewsapp.utils.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -21,9 +21,9 @@ class RetrofitInstance {
                 .client(client)
                 .build()
         }
+        val api by lazy {
+            retrofit.create(NewsAPI::class.java)
+        }
     }
 
-    val api by lazy {
-        retrofit.create(NewsAPI::class.java)
-    }
 }

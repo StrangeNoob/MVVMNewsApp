@@ -1,7 +1,8 @@
-package com.androiddevs.mvvmnewsapp.api
+package dev.strangenoob.mvvmnewsapp.api
 
-import com.androiddevs.mvvmnewsapp.ui.NewsResponse
-import com.androiddevs.mvvmnewsapp.utils.Constants.Companion.API_KEY
+
+import dev.strangenoob.mvvmnewsapp.model.NewsResponse
+import dev.strangenoob.mvvmnewsapp.utils.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
